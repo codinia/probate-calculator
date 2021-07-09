@@ -12,8 +12,61 @@
 
 <body>
     <h1>
-        probate calculator
+        California Probate Fee Calculator
     </h1>
+    <p>In California, executor and attorney fees are calculated as a percentage of the estate’s value. The formula for this calculation is set by law. In addition to these “statutory fees,” additional fees may be permitted by the court if extraordinary services
+        are performed (“extraordinary fees”). The following calculator may help you determine how much probate will cost. Use the calculator below to estimate probate fees for estates worth over $166,250 up to $25,000,000. The Probate fee formula is set
+        by California Probate Code Section 10810.</p>
+    <form>
+        <p>Please enter the estimated value of the estate, including real property1 and personal property2.</p>
+        <input type="text" onchange="dateEntered()" id="txt_est_val">
+        <p>
+            Note 1: For real property (real estate), include the fair market value. This is the value that you might receive if you listed the house for sale. Do not take into account balances on mortgages.
+        </p>
+        <p>Note 2: Examples of Personal Property to include are checking and savings accounts, CDs, Money Markets, investment accounts, market value of owned vehicles. Do not include assets which have designated beneficiaries, such as life insurance, IRAs,
+            or 401K accounts unless those accounts have no designations or all beneficiaries have passed away.</p>
+        <h4>Estimated Probate Fees:</h4>
+        <div>
+            <label>Attorney’s Fees</label>
+            <input type="text" id="attr_fee">
+        </div>
+        <div>
+            <label>Executor’s Fees</label>
+            <input type="text" id="exec_fee">
+        </div>
+        <div>
+            <label>Total Estimated Probate Fees</label>
+            <input type="text" id="total_p">
+        </div>
+        <h4>Probate Fee Breakdown</h4>
+        <div>
+            <label>4% on the first $100,000</label>
+            <input type="text" id="four_percent">
+        </div>
+        <div>
+            <label>3% on the second $100,000</label>
+            <input type="text" id="three_percent">
+        </div>
+        <div>
+            <label>2% on the next $800,000</label>
+            <input type="text" id="two_percent">
+        </div>
+        <div>
+            <label>1% percent on the next $9 million</label>
+            <input type="text" id="one_percent">
+        </div>
+        <div>
+            <label>0.5% on the next $15 million</label>
+            <input type="text" id="point_five">
+        </div>
+        <div>
+            <label>Total per person (Attorney and Executor)</label>
+            <input type="text" id="total_pp">
+        </div>
+        <div>
+            <p>Costs associated with Probate also include court filing fees, publication fees, appraisal fees (also set my law) in addition to attorney fees and executor fees. </p>
+        </div>
+    </form>
 </body>
 
 </html>
